@@ -1,0 +1,280 @@
+//#include <stdio.h>
+//#include <stdlib.h>
+//
+//int main()
+//{
+//    printf("Hello world!\n");
+//    return 0;
+//}
+//#include<stdio.h>
+//int my(const char*a,const char*b)
+//{
+//    while(*a++==*b++&&*a&&*b);
+//    return *(--a)-*(--b);
+//}
+//int main()
+//{
+//    char arr1[100],arr2[100];
+//    scanf("%s%s",arr1,arr2);
+//    if(my(arr1,arr2)==0)
+//        printf("same\n");
+//    else
+//        printf("different\n");
+//    return 0;
+//}
+//#include<stdio.h>
+//int main()
+//{
+//    int n,m,i,sum=0;
+//    scanf("%d%d",&n,&m);
+//    int arr[n][m];
+//    for(;n;n--)
+//        for(i=m;i>0;i--)
+//        {
+//            scanf("%d",&arr[n-1][i-1]);
+//            if(arr[n-1][i-1]>0)
+//                sum+=arr[n-1][i-1];
+//        }
+//    printf("%d",sum);
+//    return 0;
+//}
+//#include<stdio.h>
+//int main()
+//{
+//    int arr[10],i;
+//    for(i=0;i<10;i++)
+//        scanf("%d",&arr[i]);
+//    for(i=9;i>=0;i--)
+//        printf("%d ",arr[i]);
+//    return 0;
+//}
+//#include<stdio.h>
+//int main()
+//{
+//    int count1=0,count2=0,i,arr[10];
+//    for(i=0;i<10;i++)
+//    {
+//        scanf("%d",&arr[i]);
+//        if(arr[i]>0)
+//            count1++;
+//        if(arr[i]<0)
+//            count2++;
+//    }
+//    printf("positive:%d\nnegative:%d",count1,count2);
+//    return 0;
+//}
+//#include<stdio.h>
+//int main()
+//{
+//    int n,sum=0,i;
+//    scanf("%d",&n);
+//    for(;n;n--)
+//    {
+//        scanf("%d",&i);
+//        sum+=i;
+//    }
+//    printf("%d",sum);
+//    return 0;
+//}
+//#include<stdio.h>
+//int main()
+//{
+//    int max=0,min=100,n,s;
+//    scanf("%d",&n);
+//    for(;n;n--)
+//    {
+//        scanf("%d",&s);
+//        if(s>max)
+//            max=s;
+//        if(s<min)
+//            min=s;
+//    }
+//    printf("%d",max-min);
+//    return 0;
+//}
+//#include<stdio.h>
+//int main()
+//{
+//    int n,flag=0;
+//    scanf("%d",&n);
+//    int arr[n];
+//    for(;n;n--)
+//    {
+//        scanf("%d",&arr[n-1]);
+//        if(!flag)
+//            flag=1;
+//        else if(arr[n-1]>arr[n])
+//            if(flag==2)
+//                break;
+//            else
+//                flag=3;
+//        else if (arr[n-1]<arr[n])
+//            if(flag==3)
+//                break;
+//            else
+//                flag=2;
+//    }
+//    if(!n)
+//        printf("sorted\n");
+//    else
+//        printf("unsorted\n");
+//    return 0;
+//}
+//#include<stdio.h>
+//int main()
+//{
+//    char ch; int a[5] = { 6,7,8,9,10 };
+//    int i, j;
+//    for (j = 0; j <= 10000; j++)
+//    {
+//
+//        ch= getchar();
+//        if (ch == '\n')
+//        {
+//            break;
+//        }
+//        for (i = 0; i < 5; i++)
+//        {
+//            if (ch >= '6' && ch <= '10' && a[i] == (ch-'0'))
+//            {
+//                a[i]=0;
+//            }
+//        }
+//
+//    }
+//    for(i=0;i<5;i++)
+//    {
+//        if(a[i]!=0)
+//            printf("%d ",a[i]);
+//    }
+//}
+//#include <stdio.h>
+//int menu()
+//{ int b;
+//  char a[256];
+//  printf("1 按照身高查询\n");
+//  printf("2 按照球员编号查询\n");
+//  printf("3 按照得分查询\n");
+//  printf("4 退出程序\n");
+//  printf("请选择,输入选项前面的数字后回车: "); scanf("%d",b);
+//  if ( a[0]>='1' && a[0]<='5' ) b=a[0]-'0'; else b=0;
+//  return b ;
+//}
+//void f1() {}
+//void f2() {}
+//void f3() {}
+//int  main()
+//{ int s,loop=1;
+//  while ( loop )
+//  { s=menu();
+//    switch ( s )
+//    { case 1: f1(); break;
+//      case 2: f2(); break;
+//      case 3: f3(); break;
+//      case 5: loop=0; break;
+//      default: break;
+//    }
+//  }
+//  return 0;
+//}
+//#include <stdio.h>
+//int menu()
+//{ int b;
+//  char a[256];
+//  printf("1 按照身高查询\n");
+//  printf("2 按照球员编号查询\n");
+//  printf("3 退出当前菜单\n");
+//  printf("请选择,输入选项前面的数字后回车: ");
+//  scanf("%d",&b);
+//  return b;
+//}
+//void f1() {}
+//void f2() {}
+//void main()
+//{ int s,c=1;
+//  while ( c )
+//  { s=menu();
+//    switch ( s )
+//    { case 1: f1(); break;
+//      case 2: f2(); break;
+//      case 3 : c=0; break;
+//      default: break;
+//    }
+//  }
+//}
+//#include<stdio.h>
+//int main()
+//{
+//
+//    int arr[5]={6,7,8,9,10},n,i,a;
+//    while(~scanf("%d",&n))
+//    {
+//        a=getchar();
+//        if(n>=6||n<=10)
+//            for(i=0;i<5;i++)
+//                if(n==arr[i])
+//                   arr[i]=0;
+//        if(a=='\n')
+//            break;
+//    }
+//    for(i=0;i<5;i++)
+//        if(arr[i]!=0)
+//            printf("%d ",arr[i]);
+//    printf("\n");
+//    return 0;
+//}
+//#include<stdio.h>
+//int Digitsum(int n)
+//{
+//	if (n <10)
+//		return n
+//	else
+//		return n % 10 + Digitsum(n / 10);
+//}
+//
+//int main()
+//{
+//	int n;
+//	scanf("%d", &n);
+//	printf("%d\n", Digitsum(n));
+//	return 0;
+//}
+#include<stdio.h>
+#include<stdlib.h>
+typedef struct Node
+{
+    int data;
+    struct Node*next;
+}node;
+node* create(node*head)
+{
+    node*p;
+    if(!head)
+    {
+        p=(node*)malloc(sizeof(node));
+        printf("请输入：");
+        scanf("%d",&p->data);
+        p->next=NULL;
+        head=p;
+        return head;
+    }
+    else
+    {
+        p=(node*)malloc(sizeof(node));
+        p->next=head;
+        printf("请输入：");
+        scanf("%d",&p->data);
+        head=p;
+        return head;
+    }
+
+}
+int main()
+{
+    node*Head=NULL;
+    while(1)
+    {
+        Head=create(Head);
+    }
+    return 0;
+}
